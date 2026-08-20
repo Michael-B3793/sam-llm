@@ -1,0 +1,25 @@
+# Deep Learning & Foundation Models
+torch>=2.0.0
+transformers>=4.40.0
+huggingface-hub>=0.20.0
+accelerate>=0.30.0
+
+# Tabular Machine Learning & Regression
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+ngboost>=0.5.0
+joblib>=1.3.0
+gplearn>=0.4.2
+
+# Data Processing & Chemistry
+pandas>=2.0.0
+numpy>=1.26.0,<3.0.0
+openpyxl>=3.1.0
+tqdm>=4.66.0
+rdkit>=2023.9.0
+
+# Visualization & Interpretability
+matplotlib>=3.8.0
+seaborn>=0.13.0
+shap>=0.45.0
+optuna>=3.6.0
