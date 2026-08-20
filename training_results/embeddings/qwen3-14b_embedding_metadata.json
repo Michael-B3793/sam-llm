@@ -1,0 +1,7 @@
+{
+  "model_dir": "/Users/michael/Desktop/文件/吕工作/training_results/models/qwen3-14b-mlx-4bit",
+  "backend": "mlx",
+  "samples": 405,
+  "embedding_dim": 5120,
+  "max_length": 384
+}
