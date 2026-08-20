@@ -1,10 +1,10 @@
 # LLM-Enhanced SAM/OPV Device Performance Prediction
 
-This repository integrates Large Language Model (LLM) text representations with tabular machine learning and probabilistic regression models[cite: 5, 7, 8] to predict four key photovoltaic performance metrics for Self-Assembled Monolayers (SAM) and Organic/Perovskite Photovoltaic (OPV/Perovskite) devices[cite: 1, 2]:
-- **PCE (%)**: Power Conversion Efficiency[cite: 1]
-- **VOC (V)**: Open-Circuit Voltage[cite: 1]
-- **JSC (mA·cm⁻²)**: Short-Circuit Current Density[cite: 1]
-- **FF**: Fill Factor[cite: 1]
+This repository integrates Large Language Model (LLM) text representations with tabular machine learning and probabilistic regression models. to predict four key photovoltaic performance metrics for Self-Assembled Monolayers (SAM) and Organic/Perovskite Photovoltaic (OPV/Perovskite) devices:
+- **PCE (%)**: Power Conversion Efficiency.
+- **VOC (V)**: Open-Circuit Voltage
+- **JSC (mA·cm⁻²)**: Short-Circuit Current Density
+- **FF**: Fill Factor
 
 ---
 
@@ -38,15 +38,7 @@ This repository integrates Large Language Model (LLM) text representations with 
     ├── models/                                   # Serialized regression pipelines and best estimators (.joblib)
     ├── metrics/                                  # Hyperparameter settings (cs.json), metrics (metrics.json), and feature importance
     └── predictions/                              # Prediction outputs across scenarios (test_predictions.csv)
-```[cite: 1, 2, 3, 4, 5, 6, 7, 8]
+```
 
 ---
 
-## ⚙️ Environment Setup & Installation
-
-### Option 1: Using Conda (Recommended)
-Create and activate the environment directly using the provided `environment.yml`:
-```bash
-conda env create -f environment.yml
-conda activate opv_ml
-```
