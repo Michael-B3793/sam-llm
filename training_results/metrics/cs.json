@@ -1,0 +1,564 @@
+{
+  "baseline": {
+    "extra_trees": {
+      "n_estimators": 100,
+      "max_depth": 15,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 15,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        512,
+        256,
+        64
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.09566451462752805,
+      "learning_rate_init": 0.0010465319425794358,
+      "learning_rate": "constant",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.01,
+      "minibatch_frac": 0.5
+    },
+    "vector_xgboost": {
+      "n_estimators": 5,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree"
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  },
+  "opt-350m": {
+    "extra_trees": {
+      "n_estimators": 100,
+      "max_depth": 15,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 200,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 8,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        512,
+        256,
+        64
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.09566451462752805,
+      "learning_rate_init": 0.0010465319425794358,
+      "learning_rate": "constant",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 50,
+      "learning_rate": 0.02,
+      "minibatch_frac": 0.8
+    },
+    "vector_xgboost": {
+      "n_estimators": 20,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree",
+      "learning_rate": 0.1
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  },
+  "pythia-410m": {
+    "extra_trees": {
+      "n_estimators": 75,
+      "max_depth": 15,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 8,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128,
+        64
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.037353015948418014,
+      "learning_rate_init": 0.0034301512114953536,
+      "learning_rate": "constant",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "minibatch_frac": 0.8
+    },
+    "vector_xgboost": {
+      "n_estimators": 100,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree",
+      "learning_rate": 0.03
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  },
+  "Qwen1.5-0.5B-Chat": {
+    "extra_trees": {
+      "n_estimators": 200,
+      "max_depth": 15,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 400,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 8,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        512,
+        256,
+        64
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.0711381462066087,
+      "learning_rate_init": 0.002147198507858542,
+      "learning_rate": "adaptive",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 80,
+      "learning_rate": 0.02,
+      "minibatch_frac": 0.8
+    },
+    "vector_xgboost": {
+      "n_estimators": 120,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree",
+      "learning_rate": 0.015
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  },
+  "Qwen2.5-0.5B-Instruct": {
+    "extra_trees": {
+      "n_estimators": 200,
+      "max_depth": 15,
+      "min_samples_leaf": 6,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 400,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 8,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128,
+        64
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.03797341577490715,
+      "learning_rate_init": 0.003229794641502545,
+      "learning_rate": "constant",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 85,
+      "learning_rate": 0.02,
+      "minibatch_frac": 0.8
+    },
+    "vector_xgboost": {
+      "n_estimators": 100,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree",
+      "learning_rate": 0.02
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  },
+  "qwen3-14b": {
+    "extra_trees": {
+      "n_estimators": 200,
+      "max_depth": 15,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 400,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 50,
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "poly",
+      "C": 30.07210661561394,
+      "epsilon": 0.03033230410873368
+    },
+    "k_neighbors": {
+      "n_neighbors": 8,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        1024,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.22610104058133607,
+      "learning_rate_init": 0.002082579755325557,
+      "learning_rate": "adaptive",
+      "max_iter": 500,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128,
+        64
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.03572861166144677,
+      "learning_rate_init": 0.0032032947398108005,
+      "learning_rate": "constant",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "ngboost": {
+      "n_estimators": 400,
+      "learning_rate": 0.09677465300596834
+    },
+    "vector_xgboost": {
+      "n_estimators": 200,
+      "max_depth": 9,
+      "learning_rate": 0.17378114600704808,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree"
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        512,
+        256,
+        128
+      ],
+      "alpha": 0.00010413762970709651,
+      "max_iter": 500,
+      "early_stopping": true
+    }
+  },
+  "SmolLM-360M-Instruct": {
+    "extra_trees": {
+      "n_estimators": 150,
+      "max_depth": 15,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt"
+    },
+    "random_forest": {
+      "n_estimators": 400,
+      "max_depth": 12,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt"
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "subsample": 0.7,
+      "colsample_bytree": 0.7,
+      "reg_alpha": 1,
+      "reg_lambda": 2,
+      "tree_method": "hist"
+    },
+    "svr": {
+      "kernel": "rbf",
+      "C": 0.8,
+      "epsilon": 0.1
+    },
+    "k_neighbors": {
+      "n_neighbors": 10,
+      "weights": "distance"
+    },
+    "wide_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        32
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 1.0,
+      "batch_size": 32,
+      "learning_rate_init": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 400,
+      "early_stopping": true,
+      "validation_fraction": 0.1
+    },
+    "deep_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128,
+        128
+      ],
+      "activation": "tanh",
+      "solver": "adam",
+      "alpha": 0.050499965305432507,
+      "learning_rate_init": 0.0031306048323834147,
+      "learning_rate": "constant",
+      "max_iter": 500
+    },
+    "ngboost": {
+      "n_estimators": 60,
+      "learning_rate": 0.02,
+      "minibatch_frac": 0.8
+    },
+    "vector_xgboost": {
+      "n_estimators": 100,
+      "tree_method": "hist",
+      "multi_strategy": "multi_output_tree",
+      "learning_rate": 0.01
+    },
+    "modern_mlp": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "alpha": 0.01,
+      "max_iter": 400
+    }
+  }
+}
