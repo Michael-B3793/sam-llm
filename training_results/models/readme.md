@@ -1,7 +1,7 @@
 
 # Model Weights
-Full pre-trained model archive `sam.zip` is available in project Releases.
-Download link: https://gitlab.com/your-project/sam-llm/-/releases
+Full pre-trained model archive `moedels.zip` is available in project Releases.
+Download link:(https://github.com/Michael-B3793/sam-llm/releases/tag/v1.0)
 
 ## Usage
 1. Download the zip file from the above Releases link
